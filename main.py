@@ -4,7 +4,7 @@ import json
 
 
 auth_data = {'email': 'email', 'password': 'pass', 'app': 'ics',
-             'device_id': 'please add function get balance in api!'}
+             'device_id': 'device'}
 session = requests.session()
 response = session.post('https://mcs.mail.ru/api/v1/auth/signin', data=auth_data)
 parse_data = session.get('https://mcs.mail.ru/api/v1/projects/your_id/billing')
